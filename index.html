@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Tabelamento de Giros</h1>
+    <div id="imagem"><img src="src/tecj_junior_logo_PNG.png" id="img1"></div>
+</body>
+<body id="tabela">
+    <h1 style="text-align: center;"> <img src="src/Process_2.png" id="img2"> Tabelamento de "Jiros"</h1>
     <!--
         ANATOMIA DE TABELAS GRANDES
         TABLE
@@ -20,201 +23,135 @@
                 TR, TD, TH
     -->
     <table>
-        <caption>Nome do vendedor</caption>
+        <caption id="Nome"><input type="text" name="Vendedor" id="nome">
+        <input type="button" value="Adicionar Nome" onclick="addnome()" id="adicionarNome"></caption>
         <thead>
             <tr>
                 <th scope="col">Clientes</th>
-                <th scope="col" style="width: 150px;">Giro 1</th>
-                <th scope="col" style="width: 150px;">Realizado</th>
-                <th scope="col" style="width: 150px;">Giro 2</th>
-                <th scope="col" style="width: 150px;">Realizado</th>
-                <th scope="col" style="width: 150px;">Meta</th>
+                <th scope="col" style="width: 210px;">Giro 1</th>
+                <th scope="col" style="width: 210px;">Realizado</th>
+                <th scope="col" style="width: 210px;">Giro 2</th>
+                <th scope="col" style="width: 210px;">Realizado</th>
+                <th scope="col" style="width: 210px;">Meta</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
                 <td>Cliente 1</td>
-                <td id="num">R$1.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$1.300</td>
-                <td id="num">R$1.100</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$1.300</td>
                 <td rowspan="10" id="num2">R$95.900</td>
             </tr>
             <tr>
                 <td>Cliente 2</td>
-                <td id="num">R$2.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$2.100</td>
-                <td id="num">R$2.100</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$2.500</td>
             </tr>
             <tr>
                 <td>Cliente 3</td>
-                <td id="num">R$500</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$900</td>
-                <td id="num">R$1.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$1.300</td>
             </tr>
             <tr>
                 <td>Cliente 4</td>
-                <td id="num">R$4.500</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$4.750</td>
-                <td id="num">R$5.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$5.200</td>
             </tr>
             <tr>
                 <td>Cliente 5</td>
-                <td id="num">R$300</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$400</td>
-                <td id="num">R$500</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$600</td>
             </tr>
             <tr>
                 <td>Cliente 6</td>
-                <td id="num">R$10.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$11.000</td>
-                <td id="num">R$11.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$13.000</td>
             </tr>
             <tr>
                 <td>Cliente 7</td>
-                <td id="num">R$5.700</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$6.000</td>
-                <td id="num">R$6.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$9.000</td>
             </tr>
             <tr>
                 <td>Cliente 8</td>
-                <td id="num">R$1.500</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$1.900</td>
-                <td id="num">R$1.700</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$1.500</td>
             </tr>
             <tr>
                 <td>Cliente 9</td>
-                <td id="num">R$15.500</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$15.600</td>
-                <td id="num">R$19.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$18.000</td>
             </tr>
             <tr>
                 <td>Cliente 10</td>
-                <td id="num">R$1.000</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$1.400</td>
-                <td id="num">R$1.300</td>
+                <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$1.500</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th>Valor Total</th>
-                <td id="num">R$42.000,00</td>
+                <td id="num">R$</td>
                 <td id="num">R$45.350,00</td>
-                <td id="num">R$48.700,00</td>
+                <td id="num">R$</td>
                 <td id="num">R$53.900,00</td>
                 <td id="num">R$99.252,00</td>
             </tr>
         </tfoot>
+        <script src="scripsTabela.js"></script>
     </table>
-    
-    <!--SEGUNDA TABELA-->
-    <table>
-        <caption></caption>
-        <thead>
-            <tr>
-                <th scope="col">Clientes</th>
-                <th scope="col" style="width: 150px;">Giro 3</th>
-                <th scope="col" style="width: 150px;">Realizado</th>
-                <th scope="col" style="width: 150px;">Giro 4</th>
-                <th scope="col" style="width: 150px;">Realizado</th>
-                <th scope="col" style="width: 150px;">Meta</th>
-            </tr>
-        </thead>
+</body>
 
-        <tbody>
-            <tr>
-                <td>Cliente 1</td>
-                <td id="num">R$1.300</td>
-                <td id="num">R$1.200</td>
-                <td id="num">R$1.500</td>
-                <td id="num">R$1.900</td>
-                <td rowspan="10" id="num2">R$102.000</td>
-            </tr>
-            <tr>
-                <td>Cliente 2</td>
-                <td id="num">R$2.200</td>
-                <td id="num">R$2.200</td>
-                <td id="num">R$2.300</td>
-                <td id="num">R$2.800</td>
-            </tr>
-            <tr>
-                <td>Cliente 3</td>
-                <td id="num">R$1.200</td>
-                <td id="num">R$1.000</td>
-                <td id="num">R$1.600</td>
-                <td id="num">R$1.700</td>
-            </tr>
-            <tr>
-                <td>Cliente 4</td>
-                <td id="num">R$5.300</td>
-                <td id="num">R$4.800</td>
-                <td id="num">R$5.400</td>
-                <td id="num">R$5.500</td>
-            </tr>
-            <tr>
-                <td>Cliente 5</td>
-                <td id="num">R$600</td>
-                <td id="num">R$1000</td>
-                <td id="num">R$900</td>
-                <td id="num">R$1.300</td>
-            </tr>
-            <tr>
-                <td>Cliente 6</td>
-                <td id="num">R$11.000</td>
-                <td id="num">R$10.000</td>
-                <td id="num">R$11.200</td>
-                <td id="num">R$12.000</td>
-            </tr>
-            <tr>
-                <td>Cliente 7</td>
-                <td id="num">R$6.200</td>
-                <td id="num">R$6.000</td>
-                <td id="num">R$6.300</td>
-                <td id="num">R$6.700</td>
-            </tr>
-            <tr>
-                <td>Cliente 8</td>
-                <td id="num">R$1.800</td>
-                <td id="num">R$1.700</td>
-                <td id="num">R$2.200</td>
-                <td id="num">R$2.200</td>
-            </tr>
-            <tr>
-                <td>Cliente 9</td>
-                <td id="num">R$19.000</td>
-                <td id="num">R$17.000</td>
-                <td id="num">R$19.000</td>
-                <td id="num">R$20.000</td>
-            </tr>
-            <tr>
-                <td>Cliente 10</td>
-                <td id="num">R$1.400</td>
-                <td id="num">R$1.200</td>
-                <td id="num">R$1.600</td>
-                <td id="num">R$2.000</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>Valor Total</th>
-                <td id="num">R$50.000,00</td>
-                <td id="num">R$46.100,00</td>
-                <td id="num">R$52.000,00</td>
-                <td id="num">R$56.100,00</td>
-                <td id="num">R$102.200,00</td>
-            </tr>
-        </tfoot>
-    </table>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<body id="grafico">    
+    <!--GRAFICO-->
+    <!--GRAFICO-->
+    <!--GRAFICO-->
+    
     <div id="chartdiv"></div>
     <script src="script.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
@@ -312,18 +249,12 @@
         }, {
           giro: "Resultado 2",
           value: 53900.00
-        }, {
-          giro: "Resultado 3",
-          value: 46100.00
-        }, {
-          giro: "Resultado 4",
-          value: 56100.00
         },{
           giro: "Soma",
-          value: 201452.00
+          value: 97250.00
         }, {
           giro: "Meta",
-          value: 197900.00
+          value: 95000.00
         },];
         
         xAxis.data.setAll(data);
