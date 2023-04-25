@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Tabelamento de Giros</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Tabelamento de Giros</h1>
+    <!--
+        ANATOMIA DE TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Nome do vendedor</caption>
+        <thead>
+            <tr>
+                <th scope="col">Clientes</th>
+                <th scope="col" style="width: 150px;">Giro 1</th>
+                <th scope="col" style="width: 150px;">Realizado</th>
+                <th scope="col" style="width: 150px;">Giro 2</th>
+                <th scope="col" style="width: 150px;">Realizado</th>
+                <th scope="col" style="width: 150px;">Meta</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cliente 1</td>
+                <td id="num">R$1.000</td>
+                <td id="num">R$1.300</td>
+                <td id="num">R$1.100</td>
+                <td id="num">R$1.300</td>
+                <td rowspan="10" id="num2">R$95.900</td>
+            </tr>
+            <tr>
+                <td>Cliente 2</td>
+                <td id="num">R$2.000</td>
+                <td id="num">R$2.100</td>
+                <td id="num">R$2.100</td>
+                <td id="num">R$2.500</td>
+            </tr>
+            <tr>
+                <td>Cliente 3</td>
+                <td id="num">R$500</td>
+                <td id="num">R$900</td>
+                <td id="num">R$1.000</td>
+                <td id="num">R$1.300</td>
+            </tr>
+            <tr>
+                <td>Cliente 4</td>
+                <td id="num">R$4.500</td>
+                <td id="num">R$4.750</td>
+                <td id="num">R$5.000</td>
+                <td id="num">R$5.200</td>
+            </tr>
+            <tr>
+                <td>Cliente 5</td>
+                <td id="num">R$300</td>
+                <td id="num">R$400</td>
+                <td id="num">R$500</td>
+                <td id="num">R$600</td>
+            </tr>
+            <tr>
+                <td>Cliente 6</td>
+                <td id="num">R$10.000</td>
+                <td id="num">R$11.000</td>
+                <td id="num">R$11.000</td>
+                <td id="num">R$13.000</td>
+            </tr>
+            <tr>
+                <td>Cliente 7</td>
+                <td id="num">R$5.700</td>
+                <td id="num">R$6.000</td>
+                <td id="num">R$6.000</td>
+                <td id="num">R$9.000</td>
+            </tr>
+            <tr>
+                <td>Cliente 8</td>
+                <td id="num">R$1.500</td>
+                <td id="num">R$1.900</td>
+                <td id="num">R$1.700</td>
+                <td id="num">R$1.500</td>
+            </tr>
+            <tr>
+                <td>Cliente 9</td>
+                <td id="num">R$15.500</td>
+                <td id="num">R$15.600</td>
+                <td id="num">R$19.000</td>
+                <td id="num">R$18.000</td>
+            </tr>
+            <tr>
+                <td>Cliente 10</td>
+                <td id="num">R$1.000</td>
+                <td id="num">R$1.400</td>
+                <td id="num">R$1.300</td>
+                <td id="num">R$1.500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Valor Total</th>
+                <td id="num">R$42.000,00</td>
+                <td id="num">R$45.350,00</td>
+                <td id="num">R$48.700,00</td>
+                <td id="num">R$53.900,00</td>
+                <td id="num">R$99.252,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <!--SEGUNDA TABELA-->
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <th scope="col">Clientes</th>
+                <th scope="col" style="width: 150px;">Giro 3</th>
+                <th scope="col" style="width: 150px;">Realizado</th>
+                <th scope="col" style="width: 150px;">Giro 4</th>
+                <th scope="col" style="width: 150px;">Realizado</th>
+                <th scope="col" style="width: 150px;">Meta</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cliente 1</td>
+                <td id="num">R$1.300</td>
+                <td id="num">R$1.200</td>
+                <td id="num">R$1.500</td>
+                <td id="num">R$1.900</td>
+                <td rowspan="10" id="num2">R$102.000</td>
+            </tr>
+            <tr>
+                <td>Cliente 2</td>
+                <td id="num">R$2.200</td>
+                <td id="num">R$2.200</td>
+                <td id="num">R$2.300</td>
+                <td id="num">R$2.800</td>
+            </tr>
+            <tr>
+                <td>Cliente 3</td>
+                <td id="num">R$1.200</td>
+                <td id="num">R$1.000</td>
+                <td id="num">R$1.600</td>
+                <td id="num">R$1.700</td>
+            </tr>
+            <tr>
+                <td>Cliente 4</td>
+                <td id="num">R$5.300</td>
+                <td id="num">R$4.800</td>
+                <td id="num">R$5.400</td>
+                <td id="num">R$5.500</td>
+            </tr>
+            <tr>
+                <td>Cliente 5</td>
+                <td id="num">R$600</td>
+                <td id="num">R$1000</td>
+                <td id="num">R$900</td>
+                <td id="num">R$1.300</td>
+            </tr>
+            <tr>
+                <td>Cliente 6</td>
+                <td id="num">R$11.000</td>
+                <td id="num">R$10.000</td>
+                <td id="num">R$11.200</td>
+                <td id="num">R$12.000</td>
+            </tr>
+            <tr>
+                <td>Cliente 7</td>
+                <td id="num">R$6.200</td>
+                <td id="num">R$6.000</td>
+                <td id="num">R$6.300</td>
+                <td id="num">R$6.700</td>
+            </tr>
+            <tr>
+                <td>Cliente 8</td>
+                <td id="num">R$1.800</td>
+                <td id="num">R$1.700</td>
+                <td id="num">R$2.200</td>
+                <td id="num">R$2.200</td>
+            </tr>
+            <tr>
+                <td>Cliente 9</td>
+                <td id="num">R$19.000</td>
+                <td id="num">R$17.000</td>
+                <td id="num">R$19.000</td>
+                <td id="num">R$20.000</td>
+            </tr>
+            <tr>
+                <td>Cliente 10</td>
+                <td id="num">R$1.400</td>
+                <td id="num">R$1.200</td>
+                <td id="num">R$1.600</td>
+                <td id="num">R$2.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Valor Total</th>
+                <td id="num">R$50.000,00</td>
+                <td id="num">R$46.100,00</td>
+                <td id="num">R$52.000,00</td>
+                <td id="num">R$56.100,00</td>
+                <td id="num">R$102.200,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div id="chartdiv"></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script>
+
+    am5.ready(function() {
+
+        // Create root element
+        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root = am5.Root.new("chartdiv");
+        
+        
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([
+          am5themes_Animated.new(root)
+        ]);
+        
+        
+        // Create chart
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/
+        var chart = root.container.children.push(am5xy.XYChart.new(root, {
+          panX: true,
+          panY: true,
+          wheelX: "panX",
+          wheelY: "zoomX",
+          pinchZoomX: true
+        }));
+        
+        // Add cursor
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/cursor/
+        var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+        cursor.lineY.set("visible", false);
+        
+        
+        // Create axes
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+        var xRenderer = am5xy.AxisRendererX.new(root, { minGridDistance: 30 });
+        xRenderer.labels.template.setAll({
+          rotation: -90,
+          centerY: am5.p50,
+          centerX: am5.p100,
+          paddingRight: 15
+        });
+        
+        xRenderer.grid.template.setAll({
+          location: 1
+        })
+        
+        var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+          maxDeviation: 0.3,
+          categoryField: "giro",
+          renderer: xRenderer,
+          tooltip: am5.Tooltip.new(root, {})
+        }));
+        
+        var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+          maxDeviation: 0.3,
+          renderer: am5xy.AxisRendererY.new(root, {
+            strokeOpacity: 0.1
+          })
+        }));
+        
+        
+        // Create series
+        // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+        var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+          name: "Series 1",
+          xAxis: xAxis,
+          yAxis: yAxis,
+          valueYField: "value",
+          sequencedInterpolation: true,
+          categoryXField: "giro",
+          tooltip: am5.Tooltip.new(root, {
+            labelText: "{valueY}"
+          })
+        }));
+        
+        series.columns.template.setAll({ cornerRadiusTL: 5, cornerRadiusTR: 5, strokeOpacity: 0 });
+        series.columns.template.adapters.add("fill", function(fill, target) {
+          return chart.get("colors").getIndex(series.columns.indexOf(target));
+        });
+        
+        series.columns.template.adapters.add("stroke", function(stroke, target) {
+          return chart.get("colors").getIndex(series.columns.indexOf(target));
+        });
+        
+        
+        // Set data
+        var data = [{
+          giro: "Resultado 1",
+          value: 43350.00
+        }, {
+          giro: "Resultado 2",
+          value: 53900.00
+        }, {
+          giro: "Resultado 3",
+          value: 46100.00
+        }, {
+          giro: "Resultado 4",
+          value: 56100.00
+        },{
+          giro: "Soma",
+          value: 201452.00
+        }, {
+          giro: "Meta",
+          value: 197900.00
+        },];
+        
+        xAxis.data.setAll(data);
+        series.data.setAll(data);
+        
+        
+        // Make stuff animate on load
+        // https://www.amcharts.com/docs/v5/concepts/animations/
+        series.appear(1000);
+        chart.appear(1000, 100);
+        
+    }); // end am5.ready()
+    </script>
+</body>
+</html>
