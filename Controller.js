@@ -11,4 +11,9 @@ app.get('/PrimeiroGiro', (req, res) =>{
     return res.json('Up')
 })
 
+app.get('/SegundoGiro', (req, res) =>{
+    return res.json('Up')
+})
+
+
 app.listen(3000, (console.log('Server up in 3000')))
