@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <title>Tabelamento de Giros</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="src/pages/estilo/estilo.css">
 </head>
 <body>
-    <div id="imagem"><img src="src/tecj_junior_logo_PNG.png" id="img1"></div>
+    <div id="imagem"><img src="src/images/tecj_junior_logo_PNG.png" id="img1"></div>
 </body>
 <body id="tabela">
-    <h1 style="text-align: center;"> <img src="src/Process_2.png" id="img2"> Tabelamento de "Jiros"</h1>
+    <h1 style="text-align: center;" id="tittleTabela"> <img src="src/images/Process_2.png" id="img2"> Tabelamento de Giros</h1>
     <!--
         ANATOMIA DE TABELAS GRANDES
         TABLE
@@ -24,7 +24,7 @@
     -->
     <table>
         <caption id="Nome"><input type="text" name="Vendedor" id="nome">
-        <input type="button" value="Adicionar Nome" onclick="addnome()" id="adicionarNome"></caption>
+            <input type="submit" value="" id="enviar"></caption>
         <thead>
             <tr>
                 <th scope="col">Clientes</th>
@@ -39,7 +39,7 @@
         <tbody>
             <tr>
                 <td>Cliente 1</td>
-                <td id="num">R$<input type="number" id="giros"></td>
+                <td id="num1" ><input type="number" id="giros1"></td>
                 <td id="num">R$1.300</td>
                 <td id="num">R$<input type="number" id="giros"></td>
                 <td id="num">R$1.300</td>
@@ -119,8 +119,9 @@
                 <td id="num">R$99.252,00</td>
             </tr>
         </tfoot>
-        <script src="scripsTabela.js"></script>
+        <script src="src/pages/Script da tabela/scripsTabela.js"></script>
     </table>
+    <input type="button" value="Aplicar" onclick="Cliquei()">
 </body>
 
 
@@ -244,8 +245,14 @@
         
         // Set data
         var data = [{
+          giro: "Giro 1",
+          value: null
+        },{
           giro: "Resultado 1",
           value: 43350.00
+        },{
+          giro: "Giro 2",
+          value: null
         }, {
           giro: "Resultado 2",
           value: 53900.00
