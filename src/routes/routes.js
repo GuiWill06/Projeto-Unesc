@@ -102,6 +102,7 @@ todosRoutes.get('/SegundoGiro', async (req, res) => {
     return res.json(todosGiros)
 })
 
+
 //Update
 todosRoutes.put('/SegundoGiro', async (req, res) => {
     const { sGiro, id } = req.body
