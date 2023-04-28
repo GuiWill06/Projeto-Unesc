@@ -12,12 +12,12 @@ datasource db {
 
 model primeiroGiro {
   id Int @id @default(autoincrement())
-  primeiroGiro String 
+  pGiro String 
 
 }
 
 model segundoGiro {
   id Int @id @default(autoincrement())
-  segundoGiro String 
+  sGiro String 
 
 }
